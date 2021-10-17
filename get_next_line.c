@@ -6,7 +6,7 @@
 /*   By: skillian <skillian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 15:57:22 by skillian          #+#    #+#             */
-/*   Updated: 2021/10/17 16:34:55 by skillian         ###   ########.fr       */
+/*   Updated: 2021/10/17 19:45:38 by skillian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,9 +74,11 @@ char	*search_n(char **buffer, int bytes)
 void	*ft_free(void **pointer)
 {
 	free(*pointer);
-	*pointer = NULL;
+	*pointer = NULL;			//nessesary for static var; for all others a ordinay free() is ok
 	return (NULL);
 }
+
+//#include <fcntl.h>    //for open command
 
 // int main()
 // {
