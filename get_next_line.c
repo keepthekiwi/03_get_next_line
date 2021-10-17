@@ -6,7 +6,7 @@
 /*   By: skillian <skillian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 15:57:22 by skillian          #+#    #+#             */
-/*   Updated: 2021/09/28 17:01:50 by skillian         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:34:55 by skillian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,3 +77,15 @@ void	*ft_free(void **pointer)
 	*pointer = NULL;
 	return (NULL);
 }
+
+// int main()
+// {
+//  int     i;
+//  char    *j;
+
+//  i = open("text.txt", O_RDONLY);
+//  j = get_next_line(i);
+//  printf("%s", j);
+//  j = get_next_line(i);
+//  printf("%s", j);
+// }
